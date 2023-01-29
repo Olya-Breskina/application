@@ -1,0 +1,51 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create-table-client"
+               author="Подгорецкая">
+
+        <createTable tableName="client">
+            <column name="название_колонки" type="тип_колонки">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="last_name" type="varchar(512)">
+                <constraints nullable="false" />
+            </column>
+            <column name="first_name" type="varchar(512)">
+                <constraints nullable="false" />
+            </column>
+            <column name="middle_name" type="varchar(512)">
+                <constraints nullable="false" />
+            </column>
+            <column name="birth_date" type="date">
+                <constraints nullable="false" />
+            </column>
+            <column name="email" type="varchar(512)">
+                <constraints nullable="false" />
+            </column>
+            <column name="gender" type="varchar(512)">
+                <constraints nullable="false" />
+            </column>
+            <column name="marital_status" type="varchar(512)">
+                <constraints nullable="false" />
+            </column>
+            <column name="dependent_amount" type="int">
+                <constraints nullable="false" />
+            </column>
+            <column name="passport_id" type="jsonb">
+                <constraints nullable="false" />
+            </column>
+            <column name="employment_id" type="jsonb">
+                <constraints nullable="false" />
+            </column>
+            <column name="account" type="varchar(512)">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

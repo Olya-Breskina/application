@@ -7,5 +7,16 @@ creditInsurance: 1000
 amountMin: 100000
 termMin: 6
 ageMin: 18
+spring:
+  datasource:
+    driver_class_name:
+      org.postgresql.Driver
+    url:
+      jdbc:postgresql://localhost:5432/deal
+    username: postgres
+    password: 123
+  liquibase:
+    enabled: true
+    change-log: classpath:/liquibase/change-log-master.yaml
 
 
