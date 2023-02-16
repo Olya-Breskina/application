@@ -1,0 +1,11 @@
+server:
+  port: 8082
+logging:
+  level:
+    ru.podgoretskaya: DEBUG
+creditInsurance: 1000
+amountMin: 100000
+termMin: 6
+ageMin: 18
+
+
