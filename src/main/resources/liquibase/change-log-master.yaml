@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: /liquibase/change-logs/create-table-application.xml
+  - include:
+      file: /liquibase/change-logs/create-table-client.xml
+  - include:
+      file: /liquibase/change-logs/create-table-credit.xml
